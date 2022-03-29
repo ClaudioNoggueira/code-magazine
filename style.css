@@ -1,9 +1,28 @@
-.main-header {
-    background-color: #f7f7f7;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3, h4, p, li {
+body {
+    border-top: 10px solid #1098ad;
+    color: #444;
     font-family: sans-serif;
+    padding: 0 15%;
+}
+
+.main-header {
+    background-color: #f7f7f7;
+    margin-bottom: 60px;
+    padding: 20px 40px;
+}
+
+nav {
+    font-size: 18px;
+    padding: 5px
+}
+
+article {
+    margin-bottom: 60px;
 }
 
 h1, h2, h3, h4 {
@@ -33,10 +52,6 @@ a:active {
 
 /* LVHA  */
 
-p, li {
-    color: #444;
-}
-
 h1 {
     font-size: 26px;
     font-style: italic;
@@ -45,10 +60,13 @@ h1 {
 
 h2 {
     font-size: 40px;
+    margin-bottom: 30px;
 }
 
 h3 {
     font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 h4 {
@@ -60,10 +78,17 @@ h4 {
 p {
     font-size: 22px;
     line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 li {
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 /* Pseudo-classes  */
@@ -71,10 +96,11 @@ li:first-child {
     font-weight: bold;
 }
 
-/* li:last-child {
-    font-style: italic;
+li:last-child {
+    margin-bottom: 0;
 }
 
+/* 
 li:nth-child(2) {
     color: red;
 }
@@ -83,10 +109,15 @@ li:nth-child(odd) {
     color: orange;
 } */
 
+.article-header {
+    margin-bottom: 40px;
+}
+
 aside {
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
+    padding: 50px 0;
 }
 
 .author {
@@ -102,6 +133,12 @@ aside {
     font-weight: bold;
 }
 
+footer {
+    padding: 40px;
+    text-align: center;
+}
+
 .copyright {
     font-size: 16px;
+    margin-bottom: 0;
 }
