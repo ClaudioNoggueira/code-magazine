@@ -10,6 +10,29 @@ h1, h2, h3, h4 {
     color: #1098ad;
 }
 
+/* Pseudo-classes  */
+a:link {
+    color: #1098ad;
+    text-decoration: none;
+}
+
+/* a:visited {
+    color: #1098ad;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline dotted orangered;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+} */
+
+/* LVHA  */
+
 p, li {
     color: #444;
 }
@@ -42,6 +65,23 @@ p {
 li {
     font-size: 20px;
 }
+
+/* Pseudo-classes  */
+li:first-child {
+    font-weight: bold;
+}
+
+/* li:last-child {
+    font-style: italic;
+}
+
+li:nth-child(2) {
+    color: red;
+}
+
+li:nth-child(odd) {
+    color: orange;
+} */
 
 aside {
     background-color: #f7f7f7;
