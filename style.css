@@ -46,6 +46,12 @@ nav a:link:last-child {
     margin-right: 0;
 }
 
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
 article {
     margin-bottom: 60px;
 }
