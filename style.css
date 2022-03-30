@@ -22,6 +22,7 @@ body {
 }
 
 nav {
+    float: right;
     font-size: 18px;
     padding: 5px
 }
@@ -47,6 +48,22 @@ nav a:link:last-child {
 
 article {
     margin-bottom: 60px;
+}
+
+.author {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+img {
+    height: 75px;
+    width: 75px;
+}
+
+.author-img {
+    float: left;
+    margin-bottom: 20px;
 }
 
 .post-img {
@@ -82,6 +99,7 @@ a:active {
 /* LVHA  */
 
 h1 {
+    float: left;
     font-size: 26px;
     font-style: italic;
     text-transform: uppercase;
@@ -198,6 +216,6 @@ button {
     padding: 8px;
     /* Absolute related to its parent with position: relative (.container in this case) */
     position: absolute;
-    top: 120px;
+    top: 100px;
     right: 0;
 }
