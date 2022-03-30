@@ -25,6 +25,25 @@ nav {
     padding: 5px
 }
 
+nav a:link {
+    /*
+    // uses just enough space for fiting the content inside the box (No margin-top or bottom, neither padding-top or bottom or height)
+    display: inline;
+
+    // Uses all width of the line
+    display: block;  
+    */
+
+    /* // uses just enough space for fiting the content inside the box (With all margins, paddings and height) */
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+nav a:link:last-child {
+    margin-right: 0;
+}
+
 article {
     margin-bottom: 60px;
 }
