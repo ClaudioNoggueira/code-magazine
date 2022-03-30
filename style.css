@@ -7,6 +7,7 @@ body {
     border-top: 10px solid #1098ad;
     color: #444;
     font-family: sans-serif;
+    position: relative;
 }
 
 .container {
@@ -139,6 +140,7 @@ li:nth-child(odd) {
 
 .article-header {
     margin-bottom: 40px;
+    position: relative;
 }
 
 aside {
@@ -170,4 +172,14 @@ footer {
 .copyright {
     font-size: 16px;
     margin-bottom: 0;
+}
+
+button {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px;
+    /* Absolute related to its parent with position: relative (.container in this case) */
+    position: absolute;
+    top: 120px;
+    right: 0;
 }
