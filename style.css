@@ -50,6 +50,24 @@ nav a:link:last-child {
     margin-right: 0;
 }
 
+.row{
+    align-items: flex-start;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+article{
+    /*
+    DEFAULTS:
+    flex-grow: 0; // To allow an element to grow (0 means no, 1+ means yes)
+    flex-shrink: 0; // To allow an element to shrink (0 means no, 1+ means yes)
+    flex-basis: auto; // To define an item’s width, instead of the width property
+    */
+    /* shorthand for flex-grow, -shrink, -basis. */
+    flex: 0 0 65%;
+}
+
 .author-box{
     align-items: center;
     display: flex;
@@ -202,6 +220,7 @@ aside {
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
+    flex: 0 0 30%;
     /* float: right; */
     padding: 50px 30px;
     /* width: 30%; */
@@ -261,6 +280,6 @@ button {
     padding: 12px;
     /* Absolute related to its parent with position: relative (.container in this case) */
     position: absolute;
-    bottom: 9.5%;
+    bottom: 104px;
     right: 0%;
 }
