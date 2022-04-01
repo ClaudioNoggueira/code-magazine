@@ -50,12 +50,12 @@ nav a:link:last-child {
     margin-right: 0;
 }
 
-.row{
+/* .row{
     align-items: flex-start;
     display: flex;
     gap: 50px;
     justify-content: space-between;
-}
+} */
 
 article{
     /*
@@ -65,7 +65,7 @@ article{
     flex-basis: auto; // To define an item’s width, instead of the width property
     */
     /* shorthand for flex-grow, -shrink, -basis. */
-    flex: 0 0 65%;
+    /* flex: 0 0 65%; */
 }
 
 .author-box{
@@ -220,7 +220,7 @@ aside {
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
-    flex: 0 0 30%;
+    /* flex: 0 0 30%; */
     /* float: right; */
     padding: 50px 30px;
     /* width: 30%; */
@@ -241,8 +241,6 @@ aside {
     gap: 20px;
     margin-bottom: 20px;
 }
-
-.related-box{ }
 
 /* .related img {
     float: left;
