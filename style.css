@@ -12,8 +12,13 @@ body {
 }
 
 .container {
+    align-items: start;
+    column-gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 30%;
     margin: 0 auto;
     position: relative;
+    row-gap: 60px;
     width: 80%;
 }
 
@@ -21,8 +26,8 @@ body {
     align-items: center;
     background-color: #f7f7f7;
     display: flex;
+    grid-column: 1 / -1;
     justify-content: space-between;
-    margin-bottom: 60px;
     padding: 20px 40px;
 }
 
@@ -263,6 +268,7 @@ aside {
 
 footer {
     /* clear: both; */
+    grid-column: 1 / -1;
     padding: 40px;
     text-align: center;
 }
@@ -278,6 +284,6 @@ button {
     padding: 12px;
     /* Absolute related to its parent with position: relative (.container in this case) */
     position: absolute;
-    bottom: 104px;
+    bottom: 164px;
     right: 0%;
 }
