@@ -40,28 +40,28 @@
       background-color: crimson;
     }
 
-    .el--8 {
+    .container--1 .el--8 {
       grid-column: 2/3;
       grid-row: 1/2;
     }
 
-    .el--2 {
+    .container--1 .el--2 {
       grid-column: 2 / -1;
       grid-row: 2;
     }
 
-    .el--6 {
+    .container--1 .el--6 {
       grid-row: 3 / -1;
     }
 
-    .el--1 {
+    .container--1 .el--1 {
       grid-row: 1 / -1;
     }
 
     .container--1 {
       /* STARTER */
-      font-family: sans-serif;
       background-color: #ddd;
+      font-family: sans-serif;
       font-size: 40px;
       margin: 40px;
 
@@ -76,16 +76,32 @@
 
     .container--2 {
       /* STARTER */
-      display: none;
       font-family: sans-serif;
-      background-color: black;
+      background-color: #DDD;
       font-size: 40px;
-      margin: 100px;
+      margin: 30px;
 
-      width: 1000px;
+      width: 900px;
       height: 600px;
 
       /* CSS GRID */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 250px 100px;
+
+      /* Aligning tracks inside container: distribute empty space */
+      justify-content: space-between;
+      align-content: center;
+
+      /* Aligning items INSIDE cells: moving items */
+      align-items: center;
+      justify-items: center;
+
+      gap: 50px;
+    }
+
+    .container--2 .el--3 {
+      align-self: end;
     }
   </style>
 </head>
